@@ -1,0 +1,19 @@
+{
+    "name": "adapt-walkgrove-submenu",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/walkgrovedev/adapt-walkgrove-submenu.git"
+    },
+    "framework": "5",
+    "version": "1.0.0",
+    "homepage": "https://github.com/walkgrovedev/adapt-walkgrove-submenu.git",
+    "component": "Sub Menu",
+    "displayName": "submenu",
+    "description": "A component ...",
+    "main": "/js/adapt-walkgrove-submenu.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPL-3.0"
+}
