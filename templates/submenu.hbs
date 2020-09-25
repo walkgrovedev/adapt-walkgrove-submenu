@@ -8,15 +8,39 @@
       <div class="submenu__items-container">
 
         {{#each _items}}
-          <a href="{{_href}}" class="button submenu__link">
-            <div class="submenu__item"
-                  style="width: {{_appearance._width}};height: {{_appearance._height}};top: {{_appearance._top}};left: {{_appearance._left}};background: url('{{_graphic.src}};'">
-              <div>{{title}}</div>
+          {{!-- <a href="{{_href}}" class="button submenu__link"> --}}
+            <div class="submenu__item js-menu-item"
+                  data-href="{{_href}}"
+                  data-index="{{@index}}"
+                  style="width: {{_appearance._width}};height: {{_appearance._height}};top: {{_appearance._top}};left: {{_appearance._left}};background: url('{{_graphic.src}}');background-size: contain;">
+              <div class="submenu__item-title">
+                {{title}}
+                <img class="completion-icon" src="assets/00_COMPLETE TICK.png"/>
+              </div>
             </div>
-          </a>
+            <div class="submenu__item-over js-menu-item-over"
+                  data-href="{{_href}}"
+                  data-index="{{@index}}"
+                  style="width: {{_appearance._width}};height: {{_appearance._height}};top: {{_appearance._top}};left: {{_appearance._left}};background: url('{{_graphic.over}}');background-size: contain;">
+              <div class="submenu__item-title">
+                {{title}}
+              </div>
+            </div>
+          {{!-- </a> --}}
         {{/each}}
 
       </div>
+    </div>
+
+    <div class="submenu__item-titles">
+      {{#each _items}}
+          <div data-href="{{_href}}"
+            data-index="{{@index}}"
+            class="submenu__item-title js-menu-mobile-item">
+            {{title}}
+            <img class="completion-icon" src="assets/00_COMPLETE TICK.png"/>
+          </div>
+        {{/each}}
     </div>
 
   </div> 
