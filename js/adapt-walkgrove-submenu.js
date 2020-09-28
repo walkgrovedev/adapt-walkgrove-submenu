@@ -25,13 +25,13 @@ define([
     },
 
     setupInview: function() {
-      var selector = this.getInviewElementSelector();
-      if (!selector) {
-        this.setCompletionStatus();
-        return;
-      }
+      // var selector = this.getInviewElementSelector();
+      // if (!selector) {
+      //   // this.setCompletionStatus();
+      //   return;
+      // }
 
-      this.setupInviewCompletion(selector);
+      // this.setupInviewCompletion(selector);
 
       const itemCount = this.model.get('_items').length;
       let itemsLocked = 0;
@@ -53,11 +53,15 @@ define([
 
       const itemsUnlocked = itemCount - itemsLocked;
 
+      console.log(itemsLocked);
+      console.log(itemsComplete);
+
       if(itemsUnlocked > 1) {
         this.$('.component__instruction').html(this.model.get('instruction2'));
       }
       if (itemsComplete === itemCount) {
         this.$('.component__instruction').html(this.model.get('instruction3'));
+        this.setCompletionStatus();
       }
       
     },
