@@ -104,14 +104,19 @@
         
     }
 
-    .completion-icon {
+    .icon-tick {
         display: none;
-        width: 2rem;
-        height: 2rem;
-        min-width: 2rem;
+        width: @icon-size;
+        height: @icon-size;
+        min-width: @icon-size;
         position: absolute;
-        right: 0rem;
-        top: 0.35rem;
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+    .is-complete {
+        .icon-tick {
+            display: inline-block;
+        }
     }
 
     .submenu__item-titles {
@@ -146,10 +151,6 @@
             &.is-complete {
                 background-color: @primary-colour;
                 color: @white;
-    
-                .completion-icon {
-                    display: inline-block;
-                }
             }
         }
 
