@@ -29,6 +29,114 @@
       "validators": [],
       "help": "This is the instruction text",
       "translatable": true
+    },
+    "_backgroundImage": {
+      "type": "string",
+      "required": true,
+      "translatable": false
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Submenu items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Menu item title",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          },
+          "_href": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Menu item URL",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": false
+          },
+          "_appearance": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "_width": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Submenu item width",
+                "inputType": "Text",
+                "validators": [],
+                "help": "",
+                "translatable": false
+              },
+              "_height": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Submenu item height",
+                "inputType": "Text",
+                "validators": [],
+                "help": "",
+                "translatable": false
+              },
+              "_top": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Submenu item top positon",
+                "inputType": "Text",
+                "validators": [],
+                "help": "",
+                "translatable": false
+              },
+              "_left": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Submenu item left position",
+                "inputType": "Text",
+                "validators": [],
+                "help": "",
+                "translatable": false
+              }
+            }
+          },
+          "_graphic": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "src": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Submenu item image",
+                "inputType": "Text",
+                "validators": [],
+                "help": "",
+                "translatable": false
+              },
+              "alt": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Submenu item image ALT",
+                "inputType": "Text",
+                "validators": [],
+                "help": "",
+                "translatable": true
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
