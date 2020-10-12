@@ -9,51 +9,56 @@
         "displayTitle": "Our first look at a component",
         "body": "This component you're reading is a text component. All components take this form of a title and body - except a blank component. However it's important to realise that title and body attributes are not needed. <br><br>Take for instance the media component opposite or below on a smaller device - has no body attribute. Instead of the HTML being rendered Adapt simply doesn't render it. The title attribute is simply a break tag to push the media component level with the opposite component.",
         "instruction": "",
-        "_backgroundImage": "https://via.placeholder.com/1280x675",
+        "_backgroundImage": "https://via.placeholder.com/1920x1000",
         "_items": [
             {
-                "title": "first",
-                "_href": "#/id/co-01_02",
+                "title": "Questions",
+                "_href": "co-01_02",
+                "_unlockBy": "co-01_01",
                 "_appearance": {
-                "_width": "200px",
-                "_height": "200px",
-                "_top": "75%",
-                "_left": "25%"
+                    "_width": "20%",
+                    "_height": "50%",
+                    "_top": "25%",
+                    "_left": "12.5%"
                 },
                 "_graphic": {
-                "src": "https://via.placeholder.com/540x540/09f/fff",
-                "alt": ""
+                    "src": "https://via.placeholder.com/200x200/FFF/000",
+                    "over": "https://via.placeholder.com/200x200/000000/FFFFFF"
                 }
             },
             {
-                "title": "second",
-                "_href": "#/id/co-01_03",
+                "title": "Information",
+                "_href": "co-01_03",
+                "_unlockBy": "co-01_01",
                 "_appearance": {
-                "_width": "200px",
-                "_height": "200px",
-                "_top": "50%",
-                "_left": "50%"
+                    "_width": "20%",
+                    "_height": "50%",
+                    "_top": "25%",
+                    "_left": "37.5%"
                 },
                 "_graphic": {
-                "src": "https://via.placeholder.com/540x540/09f/fff",
-                "alt": ""
+                    "src": "https://via.placeholder.com/200x200/FFF/000",
+                    "over": "https://via.placeholder.com/200x200/000000/FFFFFF"
                 }
             },
             {
-                "title": "third",
-                "_href": "#/id/co-01_04",
+                "title": "Scenario",
+                "_href": "co-01_04",
+                "_unlockBy": "co-01_01",
                 "_appearance": {
-                "_width": "200px",
-                "_height": "200px",
-                "_top": "25%",
-                "_left": "75%"
+                    "_width": "20%",
+                    "_height": "50%",
+                    "_top": "25%",
+                    "_left": "67.5%"
                 },
                 "_graphic": {
-                "src": "https://via.placeholder.com/540x540/09f/fff",
-                "alt": ""
+                    "src": "https://via.placeholder.com/200x200/FFF/000",
+                    "over": "https://via.placeholder.com/200x200/000000/FFFFFF"
                 }
             }
-         ],
+        ],
+        "instruction2": "Select the <strong>next</strong> topic to begin.",
+        "instruction3": "Select the <strong>home button</strong> to continue.",
          "_pageLevelProgress": {
             "_isEnabled": true
         }
