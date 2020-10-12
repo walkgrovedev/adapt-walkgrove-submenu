@@ -1,13 +1,9 @@
 {
   "name": "adapt-walkgrove-submenu",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/walkgrovedev/adapt-walkgrove-submenu.git"
-  },
-  "framework": "5",
+  "framework": ">=5",
   "homepage": "https://github.com/walkgrovedev/adapt-walkgrove-submenu.git",
-  "component": "Sub Menu",
-  "displayName": "submenu",
+  "component": "submenu",
+  "displayName": "Submenu",
   "description": "A component ...",
   "main": "/js/adapt-walkgrove-submenu.js",
   "keywords": [
@@ -15,14 +11,14 @@
     "adapt-component"
   ],
   "license": "GPL-3.0",
-  "_release": "bc37172038",
+  "_release": "1.0.0",
   "_resolution": {
     "type": "branch",
     "branch": "master",
     "commit": "bc37172038d889f31ee1f5ad67ef99e124b0ebac"
   },
   "_source": "git://github.com/walkgrovedev/adapt-walkgrove-submenu.git",
-  "_target": "*",
+  "_target": "1.0.0",
   "_originalSource": "adapt-walkgrove-submenu",
   "_direct": true
 }
