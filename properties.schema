@@ -137,6 +137,24 @@
           }
         }
       }
+    },
+    "instruction2": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text once the first item is complete",
+      "translatable": true
+    },
+    "instruction3": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text once all items are complete",
+      "translatable": true
     }
   }
 }

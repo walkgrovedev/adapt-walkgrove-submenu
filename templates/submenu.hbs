@@ -12,6 +12,7 @@
             <div class="submenu__item js-menu-item"
                   data-href="{{_href}}"
                   data-index="{{@index}}"
+                  {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}
                   style="width: {{_appearance._width}};height: {{_appearance._height}};top: {{_appearance._top}};left: {{_appearance._left}};background: url('{{_graphic.src}}');background-size: contain;">
               <div class="submenu__item-title">
                 {{title}}
@@ -21,6 +22,7 @@
             <div class="submenu__item-over js-menu-item-over"
                   data-href="{{_href}}"
                   data-index="{{@index}}"
+                  {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}
                   style="width: {{_appearance._width}};height: {{_appearance._height}};top: {{_appearance._top}};left: {{_appearance._left}};background: url('{{_graphic.over}}');background-size: contain;">
               <div class="submenu__item-title">
                 {{title}}
@@ -36,7 +38,8 @@
       {{#each _items}}
           <div data-href="{{_href}}"
             data-index="{{@index}}"
-            class="submenu__item-title js-menu-mobile-item">
+            class="submenu__item-title js-menu-mobile-item"
+            aria-label="{{title}}">
             {{title}}
             <div class="icon icon-tick"> </div>
           </div>

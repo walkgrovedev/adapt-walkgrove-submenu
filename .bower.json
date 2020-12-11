@@ -15,7 +15,7 @@
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "bc37172038d889f31ee1f5ad67ef99e124b0ebac"
+    "commit": "2d1742a29bc2f5f5cbfb0e95739878e6953f01d8"
   },
   "_source": "git://github.com/walkgrovedev/adapt-walkgrove-submenu.git",
   "_target": "1.0.0",
