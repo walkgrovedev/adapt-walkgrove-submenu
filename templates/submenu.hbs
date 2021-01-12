@@ -2,7 +2,7 @@
   {{> component this}} 
 
   <div class="submenu__main">
-    <img class="submenu__background" src="{{_backgroundImage}}" />
+    <img class="submenu__background" src="{{_backgroundImage}}" aria-hidden="true" alt=""/>
 
     <div class="submenu__items">
       <div class="submenu__items-container">
@@ -12,7 +12,7 @@
             <div class="submenu__item js-menu-item"
                   data-href="{{_href}}"
                   data-index="{{@index}}"
-                  {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}
+                  {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true" alt=""{{/if}}
                   style="width: {{_appearance._width}};height: {{_appearance._height}};top: {{_appearance._top}};left: {{_appearance._left}};background: url('{{_graphic.src}}');background-size: contain;">
               <div class="submenu__item-title">
                 {{title}}
@@ -22,7 +22,7 @@
             <div class="submenu__item-over js-menu-item-over"
                   data-href="{{_href}}"
                   data-index="{{@index}}"
-                  {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}
+                  {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true" alt=""{{/if}}
                   style="width: {{_appearance._width}};height: {{_appearance._height}};top: {{_appearance._top}};left: {{_appearance._left}};background: url('{{_graphic.over}}');background-size: contain;">
               <div class="submenu__item-title">
                 {{title}}
